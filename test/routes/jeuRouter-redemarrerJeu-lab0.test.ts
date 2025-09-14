@@ -26,7 +26,7 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
 
   it("devrait avoir zero joueur", async () => {
     const response = await request.get('/api/v1/jeu/redemarrerJeu');
-    expect(response.body.joueur.length).toBe(0);
+    expect(response.body.joueurs).toHaveLength(0);
     // expect(response.type).toBe("application/json");
   });
 

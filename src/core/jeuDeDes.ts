@@ -34,7 +34,7 @@ export class JeuDeDes {
     }
 
     //Ajout de la méthode redemarrerJeu (étape 4 de l'énoncé)
-        public redemarrerJeu(nom: string): void {
+        public redemarrerJeu(): void {
 
         this._joueurs.clear();
 
