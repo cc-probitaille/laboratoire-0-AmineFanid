@@ -18,14 +18,14 @@ beforeAll(async () => {
 
 describe('GET /api/v1/jeu/redemarrerJeu', () => {
   it("devrait redémarrer le jeu", async () => {
-    const response = await request.get('GET /api/v1/jeu/redemarrerJeu');
+    const response = await request.get('/api/v1/jeu/redemarrerJeu');
     expect(response.status).toBe(200);
     expect(response.type).toBe("application/json");
   });
 
 
   it("devrait avoir zero joueur", async () => {
-    const response = await request.get('GET /api/v1/jeu/redemarrerJeu');
+    const response = await request.get('/api/v1/jeu/redemarrerJeu');
     expect(response.body.joueur.length).toBe(0);
     // expect(response.type).toBe("application/json");
   });
