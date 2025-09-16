@@ -221,4 +221,4 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 #### Diagramme de classes logicielles
 
-![Diagramme de classes logiciells](image.png)
+<!-- ![Diagramme de classes logiciells](image.png) -->
