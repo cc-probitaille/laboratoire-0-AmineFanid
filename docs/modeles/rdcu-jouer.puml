@@ -23,12 +23,12 @@ note right : selon Expert
 
 c->d3 : brasser()
 note right : selon Expert
-c->d3 : v2 = valeur
+c->d3 : v3 = valeur
 note right : selon Expert
 
 c->j : incNbParties()
 note right : selon Expert
-opt (v1 + v2 + v3) <= 7
+opt v1 + v2 + v3 <= 10
   c->j : incNbPartiesGagnees()
   note right : selon Expert
 end opt
