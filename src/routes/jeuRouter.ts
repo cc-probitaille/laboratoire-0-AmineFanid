@@ -106,15 +106,13 @@ export class JeuRouter {
     }
   }
 
-  public redemarrerJeu(req: Request, res: Response, next: NextFunction){
-    this.controleurJeu.redemarrerJeu();
+  public redemarrerJeu(req: Request, res: Response, next: NextFunction) {
+    this._controleurJeu.redemarrerJeu();
     const joueurs = JSON.parse(this._controleurJeu.joueurs); 
     req.flash('info', `Le jeu redémarre`);
     res.status(200).send({
       message: 'Success',
-      joueurs
-      //status : res.status,
-      //resultat
+      joueurs,
     })
 
   }
