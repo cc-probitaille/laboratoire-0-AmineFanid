@@ -30,4 +30,10 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
     // expect(response.type).toBe("application/json");
   });
 
+  it("devrait retourner une erreur si joue sans joueur", async () => {
+    const response = await request.get('/api/v1/jeu/jouer/' + testNom2);
+    expect(response.status).toBe(404);
+    expect(response.type).toBe("application/json");
+  });
+
 });
